@@ -7,7 +7,9 @@
     <meta name="author" content="Jordi Mas Parramon">
 
     <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#144d37">
+
+    <meta name="theme-color" content="#f5f1ea" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a1014" media="(prefers-color-scheme: dark)">
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,8 +48,9 @@
         <!-- <form> -->
         <section class="camps">
             <div class="textareas">
-                <textarea id="textarea-entrada" class="entrada" oninput="text_input(event.target.value)" placeholder="Paste your messages here..."></textarea>
-                <textarea id="textarea-sortida" class="sortida" readonly></textarea>
+                <textarea id="textarea-entrada" class="entrada" oninput="text_input(event.target.value)"
+                placeholder="[16/10, 17:14] Jordi Mas: Paste the conversation here"></textarea>
+                <textarea id="textarea-sortida" class="sortida" readonly placeholder="Jordi Mas:&#10Formatted conversation"></textarea>
             </div>
         </section>
 
