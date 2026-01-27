@@ -90,13 +90,17 @@ header .titol-header {
     flex: 1;
     border: none;
     border-radius: 2rem;
+    outline: none;
+
+    resize: none;
     field-sizing: content;
+
 }
 .camps textarea.entrada {
     background-color: light-dark(#d9fdd3, #144d37);
 }
 .camps textarea.entrada::placeholder {
-    color: #fff6;
+    color: light-dark(#0006 ,#fff6);
 }
 .camps textarea.sortida {
     background-color: light-dark(#fff, #20272b);
