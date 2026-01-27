@@ -49,7 +49,6 @@ header .titol-header {
 .content {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 4rem;
 }
 .titol-pagina {
     display: flex;
@@ -85,7 +84,7 @@ header .titol-header {
 
 .camps .textareas textarea {
     font-size: 1.5rem;
-    min-height: 16rem;
+    min-height: 24rem;
     padding: 1rem;
     flex: 1;
     border: none;
