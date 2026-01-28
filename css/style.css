@@ -61,15 +61,12 @@ header .titol-header {
     text-align: center;
     color: light-dark(#309f1e, white);
 
-    margin-bottom: 3rem;
     padding: 0 1rem;
 
 }
 .descripcio {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: justify;
     font-size: 1.3rem;
+    color: light-dark(#666, #ccc);
 }
 
 .camps {
@@ -137,7 +134,12 @@ footer .firma {
 }
 
 /* Pantalla Mòbil */
-@media only screen and (max-width: 575px) { }
+@media only screen and (max-width: 575px) {
+    .camps .textareas textarea {
+        font-size: 1rem;
+        min-height: 12rem;
+    }
+}
 /* Pantalla Tablet */
 @media only screen and (min-width: 576px) { }
 /* Pantalla PC */
