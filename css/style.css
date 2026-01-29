@@ -70,23 +70,26 @@ header .titol-header {
 }
 
 .camps {
+    position: relative;
 
-}
-.camps .textareas {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     
 }
+.camps > div {
+    flex: 1;
+}
 
-.camps .textareas textarea {
+.camps textarea {
     font-size: 1.5rem;
     min-height: 24rem;
+    width: 100%;
     padding: 0.75rem 1rem;
-    flex: 1;
+    
+    outline: none;
     border: none;
     border-radius: 2rem;
-    outline: none;
 
     resize: none;
     field-sizing: content;
@@ -104,6 +107,18 @@ header .titol-header {
 .camps textarea.sortida {
     background-color: light-dark(#fff, #20272b);
     color: light-dark(hsl(112, 0%, 20%), white);
+}
+
+.camps .boto.copiar {
+    position: absolute;
+    top: 0; right: 0;
+    margin: 0.5rem;
+
+    background-color: #309f1e;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
 }
 
 
@@ -127,15 +142,30 @@ footer .firma {
         transform: scale(0.9);
     }
 }
+
+/* Reset */
+button.rs {
+    border: none;
+    background: none;
+    padding: 0;
+    color: inherit;
+    cursor: pointer;
+}
+button.rs:disabled {
+    opacity: 0.5;
+    filter: saturate(0.5);
+    pointer-events: none;
+}
+
 @media (prefers-color-scheme: light) {
-    .camps .textareas textarea {
+    .camps textarea {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
     }
 }
 
 /* Pantalla Mòbil */
 @media only screen and (max-width: 575px) {
-    .camps .textareas textarea {
+    .camps textarea {
         font-size: 1rem;
         min-height: 12rem;
     }
@@ -144,7 +174,7 @@ footer .firma {
 @media only screen and (min-width: 576px) { }
 /* Pantalla PC */
 @media only screen and (min-width: 768px) {
-    .camps .textareas {
+    .camps {
         flex-direction: row;
     }
 }

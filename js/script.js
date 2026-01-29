@@ -8,6 +8,8 @@ function text_input(text) {
     text = parsejarAgrupatNoms(text);
 
     document.getElementById("textarea-sortida").value = text;
+    
+    document.getElementById("boto-copiar").disabled = !text;
 }
 
 
@@ -43,4 +45,12 @@ function parsejarAgrupatNoms(text) {
     });
 
     return linies.join("\n");
+}
+
+function copiar() {
+    navigator.clipboard.writeText(
+        document.getElementById("textarea-sortida").value
+    );
+
+    openToast();
 }
