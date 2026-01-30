@@ -8,7 +8,7 @@ footer {
 
 }
 footer .firma {
-    color: hsl(157, 100%, 68%);
+    color: hsl(163, 100%, 68%);
         
     font-size: 1.5rem;
 
@@ -35,7 +35,7 @@ footer .icones-contacte a:hover {
 }
 
 footer .icones-contacte a i {
-    background-color: hsla(157, 100%, 82%);
+    background-color: hsla(163, 100%, 82%);
 
     display: block;
     width: 2.5rem;

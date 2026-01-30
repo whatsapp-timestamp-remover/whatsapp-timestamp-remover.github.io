@@ -48,7 +48,7 @@ function parsejarAgrupatNoms(text) {
 }
 
 function copiar() {
-    navigator.clipboard.writeText(
+    navigator.clipboard?.writeText(
         document.getElementById("textarea-sortida").value
     );
 
